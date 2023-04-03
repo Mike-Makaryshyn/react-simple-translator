@@ -1,9 +1,9 @@
 interface LanguagesArgs {
-   language: string,
-   onLanguageChange: (value: string) => void
+  language: string;
+  onLanguageChange: (value: string) => void;
 }
 
-function Languages({ language, onLanguageChange }:LanguagesArgs) {
+function Languages({ language, onLanguageChange }: LanguagesArgs) {
   return (
     <div>
       <label className="label">Select Language</label>
@@ -25,17 +25,17 @@ function Languages({ language, onLanguageChange }:LanguagesArgs) {
 }
 
 const LANGUAGES = [
+  { label: "Ukrainian", value: "uk" },
   { label: "Afrikaans", value: "af" },
   { label: "Arabic", value: "ar" },
   { label: "French", value: "fr" },
   { label: "Hindi", value: "hi" },
   { label: "Japanese", value: "ja" },
   { label: "Portuguese", value: "pt" },
-  { label: "Russian", value: "ru" },
   { label: "Simplified Chinese", value: "zh-CN" },
   { label: "Spanish", value: "es" },
   { label: "Swahili", value: "sw" },
-  { label: "Thai", value: "th" }
+  { label: "Thai", value: "th" },
 ];
 
 export default Languages;

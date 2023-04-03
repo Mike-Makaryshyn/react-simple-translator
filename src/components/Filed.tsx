@@ -11,7 +11,7 @@ function Field({ value, onChange }: FlowerArgs) {
       <Flower className="flower-right" fill="rgb(110, 146, 119)" />
       <Flower className="flower-left" fill="rgb(249, 148, 59)" />
       <h1>Translate App</h1>
-      <label>Enter English</label>
+      <label>Enter any English text</label>
       <input
         className="input"
         value={value}

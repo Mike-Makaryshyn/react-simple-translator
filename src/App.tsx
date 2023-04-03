@@ -4,8 +4,8 @@ import Translate from "./components/Translate";
 import Languages from "./components/Languages";
 
 export default function App() {
-  const [language, setLanguage] = useState<string>("es");
-  const [text, setText] = useState<string>("");
+  const [language, setLanguage] = useState<string>("uk");
+  const [text, setText] = useState<string>("Hello, we are from Ukraine!");
 
   function onFieldChange(text: string): void {
     setText(text);

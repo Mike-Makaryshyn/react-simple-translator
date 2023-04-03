@@ -54,7 +54,7 @@ const debounce = (fn: any) => {
   };
 };
 
-const API_KEY = 'paste_your_cloud_translation_key'
+const API_KEY = ''
 
 const doTranslation = debounce(
   async (
