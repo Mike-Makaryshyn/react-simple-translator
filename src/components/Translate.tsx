@@ -54,7 +54,7 @@ const debounce = (fn: any) => {
   };
 };
 
-const API_KEY = 'AIzaSyDM_1oxICzymI4oDVEHrndjjsUpjW-sqRQ'
+const API_KEY = ''
 
 const doTranslation = debounce(
   async (
