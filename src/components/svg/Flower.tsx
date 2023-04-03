@@ -1,5 +1,3 @@
-import React from "react";
-
 interface FlowerArgs {
    fill: string,
    className: string

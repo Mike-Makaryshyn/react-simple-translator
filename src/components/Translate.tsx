@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 interface TranslateArgs {
@@ -54,6 +54,8 @@ const debounce = (fn: any) => {
   };
 };
 
+const API_KEY = 'paste_your_cloud_translation_key'
+
 const doTranslation = debounce(
   async (
     input: string,
@@ -63,7 +65,7 @@ const doTranslation = debounce(
   ) => {
     try {
       const { data } = await axios.post(
-        "https://translation.googleapis.com/language/translate/v2?key=AIzaSyCf0Xy0OnhxlduyEt3K8zP-sOuu-l_u6uA",
+        `https://translation.googleapis.com/language/translate/v2?key=${API_KEY}`,
         {
           q: input,
           target: languageCode,

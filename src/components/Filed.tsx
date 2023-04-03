@@ -1,4 +1,3 @@
-import React from "react";
 import Flower from './svg/Flower';
 
 interface FlowerArgs {

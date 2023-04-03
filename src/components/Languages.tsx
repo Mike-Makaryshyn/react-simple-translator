@@ -1,5 +1,3 @@
-import React from "react";
-
 interface LanguagesArgs {
    language: string,
    onLanguageChange: (value: string) => void
